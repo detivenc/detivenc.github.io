@@ -1,0 +1,81 @@
+---
+import Section from "../Section.astro"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+
+const { cv } = Astro.props
+const { interests } = cv
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Section title={t("interests.title")}>
+    <ul>
+        {
+            interests.map(({ name, keywords }: { name: string; keywords: string[] }) => {
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <h3>{name}</h3>
+                            </header>
+                            {keywords?.length ? (
+                                    <footer>
+                                        {keywords.map((k) => <span>{k}</span>)}
+                                    </footer>
+                            ) : null}
+                        </article>
+                    </li>
+                )
+            })
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-inline: -16px;
+    }
+
+    article {
+        border-radius: 12px;
+        border: 1px solid #f2f2f2;
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        min-height: 120px;
+        background: #fff;
+    }
+
+    h3 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    footer span {
+        border-radius: 6px;
+        background: #eee;
+        color: #444;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.25rem 0.6rem;
+    }
+
+    @media (width <= 700px) {
+        ul { margin-inline: 0; }
+        article {
+            border: none;
+            box-shadow: 0 1px 1px #f2f2f2;
+            padding: 12px 0 16px 0;
+        }
+    }
+</style>

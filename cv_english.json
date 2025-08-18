@@ -1,0 +1,312 @@
+{
+  "basics": {
+    "name": "Nicolas Cao Parga",
+    "label": "Computer Engineer",
+    "image": "/me.webp",
+    "email": "detivenc@proton.me",
+    "phone": "+34 688888888",
+    "url": "https://midu.dev",
+    "summary": "Computer Engineering student at the University of Vigo. I enjoy backend development with technologies like Java and Kotlin using the Spring framework, as well as Golang. I also have frontend knowledge with Astro, React and Vue. I'm open to new technologies such as KMP and Elixir.",
+    "location": {
+      "address": "",
+      "postalCode": "15011",
+      "city": "A Coruña",
+      "countryCode": "ES",
+      "region": "Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Nicolas Cao Parga",
+        "url": "https://www.linkedin.com/in/nicolas-cao-parga-619892256/"
+      },
+      {
+        "network": "GitHub",
+        "username": "detivenc",
+        "url": "https://github.com/detivenc"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Internship at NTTDATA",
+      "position": "Intern",
+      "startDate": "2024-10-28",
+      "endDate": "2025-01-15",
+      "url": "https://es.nttdata.com/",
+      "summary": "I worked on the development of a full‑stack application with Spring Boot (Java 17) and Angular, for project management at a client company contracted by NTTDATA.",
+      "highlights": [
+        "Internship", "Spring Boot", "Angular", "Keycloak", "Java", "Docker", "Kubernetes"
+      ]
+    }
+  ],
+  "education": [{
+    "institution": "University of Vigo",
+    "url": "https://www.uvigo.gal/",
+    "area": "Software Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2020-09-05",
+    "endDate": null,
+    "score": null,
+    "courses": []
+  }],
+  "certificates": [{
+    "name": "PCEP - Python",
+    "date": "2024-10-07",
+    "issuer": "Cisco Networking Academy",
+    "url": "https://www.credly.com/badges/e31b2f5e-3e91-4109-8212-8c0188e4548e"
+  },
+    {
+      "name": "Udemy Labs - Online Kubernetes Lab for Beginners - Hands On",
+      "date": "2024-02-07",
+      "issuer": "KodeKloud",
+      "url": "https://kodekloud.com/certificate-verification/2DECDDAB0698-2DECE382DBCD-2DECD777F64A/"
+    },
+    {
+      "name": "Jr Penetration Tester",
+      "date": "2024-01-24",
+      "issuer": "TryHackMe",
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-2W7K2MUJ9W.png"
+    },
+    {
+      "name": "PCAP – Certified Associate in Python Programming",
+      "date": "2023-09-15",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.credly.com/badges/4c776907-e1c1-4eb9-88e1-d60adc82f967"
+    },
+    {
+      "name": "Cisco Certified Network Associate - Cyber Ops",
+      "date": "2023-07-09",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.credly.com/badges/1502ac0f-2b33-4fa8-9473-1c994fb21822"
+    },
+    {
+      "name": "CCNAv7: Introduction to Networks",
+      "date": "2023-05-05",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.credly.com/badges/d986967c-033c-4b60-8ef8-7f6a174d06ce"
+    }
+
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development", "Frontend"
+      ]
+    },
+    {
+      "name": "Kotlin",
+      "level": "Intermediate",
+      "keywords": [
+        "Backend", "JVM", "Coroutines", "Spring"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Advanced",
+      "keywords": [
+        "Backend", "JVM", "OOP", "Spring"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development", "Frontend", "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development", "Frontend", "Backend", "Full‑stack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases", "SQL", "Data Storage", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control", "Collaboration", "Source Code"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "keywords": [
+        "Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Vue",
+      "level": "Beginner",
+      "keywords": [
+        "Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": [
+        "Containers", "DevOps", "CI/CD", "Deployment"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "level": "Advanced",
+      "keywords": [
+        "Orchestration", "Containers", "DevOps", "Deployment"
+      ]
+    },
+    {
+      "name": "Spring Boot",
+      "level": "Advanced",
+      "keywords": [
+        "Backend", "Java", "Microservices", "REST APIs"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Database", "SQL", "Data", "Backend"
+      ]
+    },
+    {
+      "name": "Maven",
+      "level": "Intermediate",
+      "keywords": [
+        "Build", "Dependency Management", "Java", "CI/CD"
+      ]
+    },
+    {
+      "name": "Gradle",
+      "level": "Advanced",
+      "keywords": [
+        "Build", "Dependency Management", "Java/Kotlin", "CI/CD"
+      ]
+    },
+    {
+      "name": "Golang",
+      "level": "Intermediate",
+      "keywords": [
+        "Backend", "Concurrency", "Microservices", "APIs"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "Galician",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "B2"
+    },
+    {
+      "language": "German",
+      "fluency": "A1"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "A1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Reading",
+      "keywords": [
+        "Literature",
+        "Manga, Manhwa, Manhua"
+      ]
+    },
+    {
+      "name": "Gundam",
+      "keywords": [
+        "Patience",
+        "Autobots rollout"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SpringTemplateDockerized",
+      "isActive": true,
+      "description": "Template for a web service with Spring Boot, PostgreSQL, Docker and JWT",
+      "highlights": [
+        "Kotlin",
+        "Spring Boot",
+        "Docker Compose",
+        "PostgreSQL",
+        "JWT"
+      ],
+      "url": "https://github.com/DeTiveNC/SpringTemplateDockerized",
+      "github": "https://github.com/DeTiveNC/SpringTemplateDockerized"
+    },
+    {
+      "name": "Golang",
+      "isActive": true,
+      "description": "Repository with Go projects (APIs, exercises and examples)",
+      "highlights": [
+        "Go",
+        "APIs",
+        "Concurrency"
+      ],
+      "url": "https://github.com/DeTiveNC/Golang",
+      "github": "https://github.com/DeTiveNC/Golang"
+    },
+    {
+      "name": "KNotes",
+      "isActive": true,
+      "description": "Simple notes/todo application built with Kotlin",
+      "highlights": [
+        "Kotlin",
+        "Todo App"
+      ],
+      "url": "https://github.com/DeTiveNC/KNotes",
+      "github": "https://github.com/DeTiveNC/KNotes"
+    },
+    {
+      "name": "Arkanoid-Game",
+      "isActive": false,
+      "description": "Arkanoid‑style game in Vanilla JavaScript",
+      "highlights": [
+        "Deployed demo",
+        "HTML5",
+        "JavaScript"
+      ],
+      "url": "https://github.com/DeTiveNC/Arkanoid-Game",
+      "github": "https://github.com/DeTiveNC/Arkanoid-Game"
+    },
+    {
+      "name": "detivenc.github.io",
+      "isActive": true,
+      "description": "My personal portfolio built with Astro",
+      "highlights": [
+        "Astro",
+        "Deployed on GitHub Pages"
+      ],
+      "url": "https://detivenc.github.io/",
+      "github": "https://github.com/DeTiveNC/detivenc.github.io"
+    }
+  ]
+}

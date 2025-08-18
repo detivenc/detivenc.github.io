@@ -1,0 +1,83 @@
+---
+import Section from "../Section.astro"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+
+const { cv } = Astro.props
+const { certificates } = cv
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Section title={t("certificates.title")}>
+    <ul>
+        {
+            certificates.map(({ name, issuer, date, url }: { name: string; issuer: string; date: string; url: string; }) => {
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <h3>
+                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                        {name}
+                                    </a>
+                                </h3>
+                                <p class="issuer">{issuer}</p>
+                                <time datetime={date}>{new Date(date).toLocaleDateString()}</time>
+                            </header>
+                        </article>
+                    </li>
+                )
+            })
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-inline: -16px;
+    }
+
+    article {
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: 100%;
+    }
+
+    h3 {
+        margin: 0 0 4px 0;
+    }
+
+    a { color: #111; }
+    a:hover { text-decoration: underline; }
+
+    .issuer {
+        color: #333;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    time {
+        color: #666;
+        font-size: 0.8rem;
+    }
+
+    @media (width <= 700px) {
+        ul { margin-inline: 0; }
+        article {
+            border: none;
+            box-shadow: 0 1px 1px #f2f2f2;
+            padding: 0 0 16px 0;
+        }
+    }
+
+    @media print {
+        a { text-decoration: none; }
+    }
+</style>

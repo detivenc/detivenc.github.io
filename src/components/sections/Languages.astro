@@ -1,0 +1,122 @@
+---
+import Section from "../Section.astro"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+
+const { cv } = Astro.props
+const { languages } = cv
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+// Map various fluency strings to a normalized value between 0 and 1
+function normalizeFluency(f: string): number {
+    const s = f.trim().toLowerCase()
+
+    // Direct CEFR codes
+    if (/\ba1\b/.test(s)) return 1/6
+    if (/\ba2\b/.test(s)) return 2/6
+    if (/\bb1\b/.test(s)) return 3/6
+    if (/\bb2\b/.test(s)) return 4/6
+    if (/\bc1\b/.test(s)) return 5/6
+    if (/\bc2\b/.test(s)) return 1
+
+    // Spanish words
+    if (s.includes("principiante") || s.includes("básico") || s.includes("basico")) return 1/6
+    if (s.includes("intermedio")) return 3/6
+    if (s.includes("avanzad")) return 5/6
+    if (s.includes("nativo") || s.includes("materna") || s.includes("lengua materna")) return 1
+
+    // English words
+    if (s.includes("beginner") || s.includes("basic")) return 1/6
+    if (s.includes("elementary")) return 2/6
+    if (s.includes("intermediate")) return 3/6
+    if (s.includes("upper") && s.includes("inter")) return 4/6
+    if (s.includes("advanced")) return 5/6
+    if (s.includes("native")) return 1
+    if (s.includes("fluent")) return 5/6
+
+    // Fallback: try to guess
+    return 0.5
+}
+---
+
+<Section title={t("languages.title")}>
+    <ul>
+        {
+            languages.map(({ language, fluency }: { language: string; fluency: string; }) => {
+                const value = normalizeFluency(fluency)
+                const percent = Math.round(value * 100)
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <h3>{language}</h3>
+                                <span class="label">{fluency}</span>
+                            </header>
+                            <div class="bar" role="progressbar" aria-label={`${language} ${fluency}`} aria-valuemin="0" aria-valuemax="100" aria-valuenow={percent}>
+                                <div class="fill" style={`width: ${percent}%`}></div>
+                            </div>
+                        </article>
+                    </li>
+                )
+            })
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-inline: -16px;
+    }
+
+    article {
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        height: 100%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    h3 { margin: 0; font-weight: 600; }
+    .label { color: #666; font-size: 0.8rem; }
+
+    .bar {
+        width: 100%;
+        height: 10px;
+        background: #eee;
+        border-radius: 999px;
+        overflow: hidden;
+        border: 1px solid #e6e6e6;
+    }
+
+    .fill {
+        height: 100%;
+        background: linear-gradient(90deg, #4caf50, #66bb6a);
+        border-radius: 999px 0 0 999px;
+        transition: width 0.4s ease;
+    }
+
+    @media (width <= 700px) {
+        ul { margin-inline: 0; }
+        article {
+            border: none;
+            box-shadow: 0 1px 1px #f2f2f2;
+            padding: 0 0 16px 0;
+        }
+    }
+
+    @media print {
+        .fill { transition: none; }
+    }
+</style>

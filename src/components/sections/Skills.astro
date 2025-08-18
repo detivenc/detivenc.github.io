@@ -1,0 +1,86 @@
+---
+import Section from "../Section.astro"
+import HTML from "@/icons/html.astro"
+import CSS from "@/icons/css.astro"
+import JavaScript from "@/icons/javascript.astro"
+import TypeScript from "@/icons/type.astro"
+import React from "@/icons/react.astro"
+import MySQL from "@/icons/sql.astro"
+import Git from "@/icons/git.astro"
+import GitHub from "@/icons/GitHub.astro"
+import Kotlin from "@/icons/kotlin.astro"
+import Java from "@/icons/java.astro"
+import SpringBoot from "@/icons/spring.astro"
+import Docker from "@/icons/docker.astro"
+import Vue from "@/icons/vue.astro"
+import PostgreSQL from "@/icons/postgres.astro"
+import Maven from "@/icons/maven.astro"
+import Gradle from "@/icons/gradle.astro"
+import Golang from "@/icons/go.astro"
+import Kubernetes from "@/icons/kubernetes.astro"
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+
+const SKILLS_ICONS: Record<string, any> = {
+    HTML,
+    CSS,
+    JavaScript,
+    TypeScript,
+    React,
+    MySQL,
+    Git,
+    Java,
+    GitHub,
+    Docker,
+    Kubernetes,
+    SpringBoot,
+    Kotlin,
+    Vue,
+    PostgreSQL,
+    Maven,
+    Gradle,
+    Golang,
+}
+
+const { cv } = Astro.props
+const { skills } = cv
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Section title={t("skills.title")}>
+    <ul>
+        {
+            skills.map(({ name }: { name: string }) => {
+                const iconName = name === "Spring Boot" ? "SpringBoot" : name
+                const Icon = SKILLS_ICONS[iconName]
+
+                return (
+                        <li>
+                            {Icon && <Icon />} <span>{name}</span>
+                        </li>
+                )
+            })
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: inline-flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    li {
+        align-items: center;
+        background: #eee;
+        border-radius: 6px;
+        color: black;
+        display: flex;
+        font-size: 0.8rem;
+        font-weight: 500;
+        gap: 4px;
+        padding: 0.2rem 0.6rem;
+    }
+</style>

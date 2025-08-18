@@ -1,0 +1,39 @@
+---
+const { cv } = Astro.props
+
+import About from "@/components/sections/About.astro"
+import Education from "@/components/sections/Education.astro"
+import Experience from "@/components/sections/Experience.astro"
+import Hero from "@/components/sections/Hero.astro"
+import Projects from "@/components/sections/Projects.astro"
+import Skills from "@/components/sections/Skills.astro"
+import Interest from "@/components/sections/Interest.astro";
+import Languages from "@/components/sections/Languages.astro";
+import Certificates from "@/components/sections/Certificates.astro";
+---
+
+<main>
+    <Hero cv={cv} />
+    <About cv={cv} />
+    <Experience cv={cv} />
+    <Projects cv={cv} />
+    <Education cv={cv} />
+    <Certificates cv={cv} />
+    <Skills cv={cv} />
+    <Languages cv={cv} />
+    <Interest cv={cv} />
+</main>
+
+<style>
+    main {
+        padding: 4rem;
+        margin: auto;
+        width: 100%;
+    }
+
+    @media (width <= 700px) {
+        main {
+            padding: 2rem;
+        }
+    }
+</style>
