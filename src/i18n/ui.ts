@@ -15,7 +15,8 @@ export const ui = {
         'languages.title': "Languages",
         'interests.title': "Interests",
         'certificates.title': "Certificates",
-        'languagepicker.a.title': 'Change to spanish version'
+        'languagepicker.a.title': 'Change to spanish version',
+        'certificates.date': '{day}/{month}/{year}'
     },
     es: {
         'hero.a.email.title': "Enviar un correo electrónico a {name} al correo {email}",
@@ -33,6 +34,7 @@ export const ui = {
         'languages.title': "Idiomas",
         'interests.title': "Intereses",
         'certificates.title': "Certificados",
-        'languagepicker.a.title': 'Cambiar a versión en inglés'
+        'languagepicker.a.title': 'Cambiar a versión en inglés',
+        'certificates.date': '{month}/{day}/{year}'
     },
 } as const;
