@@ -298,6 +298,18 @@
       "github": "https://github.com/DeTiveNC/Arkanoid-Game"
     },
     {
+      "name": "Spotify Clone",
+      "isActive": false,
+      "description": "Spotify clone built with Astro and React",
+      "highlights": [
+        "Astro",
+        "Sample Spotify Clone",
+        "React"
+      ],
+      "url": "https://github.com/detivenc/spotify-clone",
+      "github": "https://github.com/detivenc/spotify-clone"
+    },
+    {
       "name": "detivenc.github.io",
       "isActive": true,
       "description": "My personal portfolio built with Astro",

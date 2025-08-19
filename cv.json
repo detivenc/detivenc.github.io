@@ -264,7 +264,7 @@
     },
     {
       "name": "Golang",
-      "isActive": true,
+      "isActive": false,
       "description": "Repositorio con proyectos en Go (APIs, ejercicios y ejemplos)",
       "highlights": [
         "Go",
@@ -296,6 +296,18 @@
       ],
       "url": "https://github.com/DeTiveNC/Arkanoid-Game",
       "github": "https://github.com/DeTiveNC/Arkanoid-Game"
+    },
+    {
+      "name": "Spotify Clon",
+      "isActive": false,
+      "description": "Clon de Spotify hecho con Astro y React",
+      "highlights": [
+        "Astro",
+        "Sample Spotify Clone",
+        "React"
+      ],
+      "url": "https://github.com/detivenc/spotify-clone",
+      "github": "https://github.com/detivenc/spotify-clone"
     },
     {
       "name": "detivenc.github.io",
