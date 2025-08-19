@@ -6,6 +6,8 @@ const { cv } = Astro.props
 const { certificates } = cv
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+const localeDate = lang === 'es' ? 'es-ES' : 'en-US'
 ---
 
 <Section title={t("certificates.title")}>
@@ -22,7 +24,7 @@ const t = useTranslations(lang)
                                     </a>
                                 </h3>
                                 <p class="issuer">{issuer}</p>
-                                <time datetime={date}>{new Date(date).toLocaleDateString()}</time>
+                                <time datetime={date}>{new Date(date).toLocaleDateString(localeDate)}</time>
                             </header>
                         </article>
                     </li>
