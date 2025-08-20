@@ -12,4 +12,5 @@ export default defineConfig({
             prefixDefaultLocale: true
         }
     },
+    output: 'static'
 });
