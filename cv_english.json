@@ -4,8 +4,7 @@
     "label": "Computer Engineer",
     "image": "/me.webp",
     "email": "detivenc@proton.me",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
+    "url": "https://detivenc.github.io",
     "summary": "Computer Engineering student at the University of Vigo. I enjoy backend development with technologies like Java and Kotlin using the Spring framework, as well as Golang. I also have frontend knowledge with Astro, React and Vue. I'm open to new technologies such as KMP and Elixir.",
     "location": {
       "address": "",
@@ -85,6 +84,18 @@
       "date": "2023-05-05",
       "issuer": "Cisco Networking Academy",
       "url": "https://www.credly.com/badges/d986967c-033c-4b60-8ef8-7f6a174d06ce"
+    },
+    {
+      "name": "First Certificate in English (B2)",
+      "date": "2023-05-05",
+      "issuer": "Cambridge University Press & Assessment",
+      "url": ""
+    },
+    {
+      "name": "Carnet de Conducir Tipo B",
+      "date": "2020-11-05",
+      "issuer": "Dirección General de Tráfico",
+      "url": ""
     }
 
   ],

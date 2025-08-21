@@ -1,7 +1,6 @@
 ---
 import Section from "@/components/Section.astro"
 import Mail from "@/icons/Mail.astro"
-import Phone from "@/icons/Phone.astro"
 import LinkedIn from "@/icons/LinkedIn.astro"
 import GitHub from "@/icons/GitHub.astro"
 import WorldMap from "@/icons/WorldMap.astro"
@@ -49,18 +48,6 @@ const t = useTranslations(lang)
                                         rel="noopener noreferrer"
                                 >
                                     <Mail />
-                                </a>
-                    )
-                }
-                {
-                    phone && (
-                                <a
-                                        href={`tel:${phone}`}
-                                        title={t("hero.a.phone.title").replace("{name}", name).replace("{phone}", phone)}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                >
-                                    <Phone />
                                 </a>
                     )
                 }
