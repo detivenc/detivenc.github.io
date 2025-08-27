@@ -274,16 +274,16 @@
       "github": "https://github.com/DeTiveNC/SpringTemplateDockerized"
     },
     {
-      "name": "Golang",
+      "name": "Toma6",
       "isActive": false,
-      "description": "Repositorio con proyectos en Go (APIs, ejercicios y ejemplos)",
+      "description": "Repositorio con proyecto de la universidad de un juego llamado TOMA 6",
       "highlights": [
-        "Go",
-        "APIs",
-        "Concurrencia"
+        "Java",
+        "Juego",
+        "Universidad"
       ],
-      "url": "https://github.com/DeTiveNC/Golang",
-      "github": "https://github.com/DeTiveNC/Golang"
+      "url": "https://github.com/DeTiveNC/aedi-toma6",
+      "github": "https://github.com/DeTiveNC/aedi-toma6"
     },
     {
       "name": "KNotes",
