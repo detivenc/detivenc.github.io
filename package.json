@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "detivenc-portfolio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "5.15.3",
+    "astro": "5.16.4",
     "hotkeypad": "^1.0.2",
     "typescript": "^5.9.2"
   }

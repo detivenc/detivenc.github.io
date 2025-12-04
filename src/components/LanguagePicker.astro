@@ -1,8 +1,8 @@
 ---
-import { getLangFromUrl, languages, useTranslations } from "@/i18n/utils"
-import { getAbsoluteLocaleUrl } from "astro:i18n"
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+import { getLangFromUrl, languages, useTranslations } from "@/i18n/utils";
+import { getAbsoluteLocaleUrl } from "astro:i18n";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section>
@@ -10,16 +10,16 @@ const t = useTranslations(lang)
         <ul>
             {
                 Object.entries(languages).map(([l]) => {
-                    const url = getAbsoluteLocaleUrl(l)
+                    const url = getAbsoluteLocaleUrl(l);
                     if (lang === l) {
-                        return <li class='active'>{l.toUpperCase()}</li>
+                        return <li class="active">{l.toUpperCase()}</li>;
                     }
 
                     return (
-                            <a href={url} title={t("languagepicker.a.title")}>
-                                <li>{l.toUpperCase()}</li>
-                            </a>
-                    )
+                        <a href={url} title={t("languagepicker.a.title")}>
+                            <li>{l.toUpperCase()}</li>
+                        </a>
+                    );
                 })
             }
         </ul>
@@ -70,6 +70,8 @@ const t = useTranslations(lang)
 
     /* Hide language picker when printing */
     @media print {
-        section { display: none; }
+        section {
+            display: none;
+        }
     }
 </style>

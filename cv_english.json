@@ -5,7 +5,7 @@
     "image": "/me.webp",
     "email": "detivenc@proton.me",
     "url": "https://detivenc.github.io",
-    "summary": "Computer Engineering student at the University of Vigo. I enjoy backend development with technologies like Java and Kotlin using the Spring framework, as well as Golang. I also have frontend knowledge with Astro, React and Vue. I'm open to new technologies such as KMP and Elixir.",
+    "summary": "Computer Engineering student at the University of Vigo. I enjoy backend development with technologies such as Java, Kotlin, Golang, and Elixir. I also have frontend experience with Astro and Vue.",
     "location": {
       "address": "",
       "postalCode": "15011",
@@ -28,6 +28,21 @@
   },
   "work": [
     {
+      "name": "NTTDATA",
+      "position": "Ingeniero Junior",
+      "startDate": "2025-11-10",
+      "url": "https://es.nttdata.com/",
+      "summary": "I am developing a full-stack application using Spring Boot with Java 17 and Angular for managing a company that hired NTTDATA.",
+      "highlights": [
+        "Spring Boot",
+        "Angular",
+        "Keyloack",
+        "Java",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
       "name": "Internship at NTTDATA",
       "position": "Intern",
       "startDate": "2024-10-28",
@@ -35,26 +50,35 @@
       "url": "https://es.nttdata.com/",
       "summary": "I worked on the development of a full‑stack application with Spring Boot (Java 17) and Angular, for project management at a client company contracted by NTTDATA.",
       "highlights": [
-        "Internship", "Spring Boot", "Angular", "Keycloak", "Java", "Docker", "Kubernetes"
+        "Internship",
+        "Spring Boot",
+        "Angular",
+        "Keycloak",
+        "Java",
+        "Docker",
+        "Kubernetes"
       ]
     }
   ],
-  "education": [{
-    "institution": "University of Vigo",
-    "url": "https://www.uvigo.gal/",
-    "area": "Software Engineering",
-    "studyType": "Bachelor",
-    "startDate": "2020-09-05",
-    "endDate": null,
-    "score": null,
-    "courses": []
-  }],
-  "certificates": [{
-    "name": "PCEP - Python",
-    "date": "2024-10-07",
-    "issuer": "Cisco Networking Academy",
-    "url": "https://www.credly.com/badges/e31b2f5e-3e91-4109-8212-8c0188e4548e"
-  },
+  "education": [
+    {
+      "institution": "University of Vigo",
+      "url": "https://www.uvigo.gal/",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2020-09-05",
+      "endDate": null,
+      "score": null,
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "PCEP - Python",
+      "date": "2024-10-07",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.credly.com/badges/e31b2f5e-3e91-4109-8212-8c0188e4548e"
+    },
     {
       "name": "Udemy Labs - Online Kubernetes Lab for Beginners - Hands On",
       "date": "2024-02-07",
@@ -97,127 +121,82 @@
       "issuer": "Dirección General de Tráfico",
       "url": ""
     }
-
   ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Advanced",
-      "keywords": [
-        "Web Development", "Frontend"
-      ]
-    },
-    {
       "name": "Kotlin",
-      "level": "Intermediate",
-      "keywords": [
-        "Backend", "JVM", "Coroutines", "Spring"
-      ]
+      "level": "Intermedio",
+      "keywords": ["Backend", "JVM", "Coroutines", "Spring"]
     },
     {
       "name": "Java",
-      "level": "Advanced",
-      "keywords": [
-        "Backend", "JVM", "OOP", "Spring"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development", "Frontend", "Responsive Design"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development", "Frontend", "Backend", "Full‑stack"
-      ]
+      "level": "Avanzado",
+      "keywords": ["Backend", "JVM", "POO", "Spring"]
     },
     {
       "name": "TypeScript",
-      "level": "Intermediate",
+      "level": "Intermedio",
       "keywords": [
-        "Web Development", "Frontend", "Backend", "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases", "SQL", "Data Storage", "Backend"
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
       ]
     },
     {
       "name": "Git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control", "Collaboration", "Source Code"
-      ]
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
     },
     {
-      "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web", "Frontend", "JavaScript Library", "UI"
-      ]
+      "name": "Angular",
+      "level": "Intermedio",
+      "keywords": ["Web", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Vue",
-      "level": "Beginner",
-      "keywords": [
-        "Web", "Frontend", "JavaScript Library", "UI"
-      ]
+      "level": "Principiante",
+      "keywords": ["Web", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Docker",
-      "level": "Advanced",
-      "keywords": [
-        "Containers", "DevOps", "CI/CD", "Deployment"
-      ]
+      "level": "Avanzado",
+      "keywords": ["Containers", "DevOps", "CI/CD", "Deployment"]
     },
     {
       "name": "Kubernetes",
-      "level": "Advanced",
-      "keywords": [
-        "Orchestration", "Containers", "DevOps", "Deployment"
-      ]
+      "level": "Avanzado",
+      "keywords": ["Orchestration", "Containers", "DevOps", "Deployment"]
     },
     {
       "name": "Spring Boot",
-      "level": "Advanced",
-      "keywords": [
-        "Backend", "Java", "Microservices", "REST APIs"
-      ]
+      "level": "Avanzado",
+      "keywords": ["Backend", "Java", "Microservices", "APIs REST"]
     },
     {
       "name": "PostgreSQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Database", "SQL", "Data", "Backend"
-      ]
+      "level": "Intermedio",
+      "keywords": ["Database", "SQL", "Data", "Backend"]
     },
     {
       "name": "Maven",
-      "level": "Intermediate",
-      "keywords": [
-        "Build", "Dependency Management", "Java", "CI/CD"
-      ]
+      "level": "Intermedio",
+      "keywords": ["Build", "Dependecy Managment", "Java", "CI/CD"]
     },
     {
       "name": "Gradle",
-      "level": "Advanced",
-      "keywords": [
-        "Build", "Dependency Management", "Java/Kotlin", "CI/CD"
-      ]
+      "level": "Avanzado",
+      "keywords": ["Build", "Dependecy Managment", "Java/Kotlin", "CI/CD"]
     },
     {
       "name": "Golang",
-      "level": "Intermediate",
-      "keywords": [
-        "Backend", "Concurrency", "Microservices", "APIs"
-      ]
+      "level": "Intermedio",
+      "keywords": ["Backend", "Concurrency", "Microservices", "APIs"]
+    },
+    {
+      "name": "Elixir",
+      "level": "Intermedio",
+      "keywords": ["Fault-tolerance", "Concurrency", "Webs", "APIs"]
     }
   ],
   "languages": [
@@ -245,17 +224,11 @@
   "interests": [
     {
       "name": "Reading",
-      "keywords": [
-        "Literature",
-        "Manga, Manhwa, Manhua"
-      ]
+      "keywords": ["Literature", "Manga, Manhwa, Manhua"]
     },
     {
       "name": "Gundam",
-      "keywords": [
-        "Patience",
-        "Autobots rollout"
-      ]
+      "keywords": ["Patience", "Autobots rollout"]
     }
   ],
   "projects": [
@@ -277,11 +250,7 @@
       "name": "Toma6",
       "isActive": false,
       "description": "Repository with university project from a game called TOMA 6",
-      "highlights": [
-        "Java",
-        "Game",
-        "University"
-      ],
+      "highlights": ["Java", "Game", "University"],
       "url": "https://github.com/DeTiveNC/aedi-toma6",
       "github": "https://github.com/DeTiveNC/aedi-toma6"
     },
@@ -289,10 +258,7 @@
       "name": "KNotes",
       "isActive": true,
       "description": "Simple notes/todo application built with Kotlin",
-      "highlights": [
-        "Kotlin",
-        "Todo App"
-      ],
+      "highlights": ["Kotlin", "Todo App"],
       "url": "https://github.com/DeTiveNC/KNotes",
       "github": "https://github.com/DeTiveNC/KNotes"
     },
@@ -300,11 +266,7 @@
       "name": "Arkanoid-Game",
       "isActive": false,
       "description": "Arkanoid‑style game in Vanilla JavaScript",
-      "highlights": [
-        "Deployed demo",
-        "HTML5",
-        "JavaScript"
-      ],
+      "highlights": ["Deployed demo", "HTML5", "JavaScript"],
       "url": "https://github.com/DeTiveNC/Arkanoid-Game",
       "github": "https://github.com/DeTiveNC/Arkanoid-Game"
     },
@@ -312,11 +274,7 @@
       "name": "Spotify Clone",
       "isActive": false,
       "description": "Spotify clone built with Astro and React",
-      "highlights": [
-        "Astro",
-        "Sample Spotify Clone",
-        "React"
-      ],
+      "highlights": ["Astro", "Sample Spotify Clone", "React"],
       "url": "https://github.com/detivenc/spotify-clone",
       "github": "https://github.com/detivenc/spotify-clone"
     },
@@ -324,10 +282,7 @@
       "name": "detivenc.github.io",
       "isActive": true,
       "description": "My personal portfolio built with Astro",
-      "highlights": [
-        "Astro",
-        "Deployed on GitHub Pages"
-      ],
+      "highlights": ["Astro", "Deployed on GitHub Pages"],
       "url": "https://detivenc.github.io/",
       "github": "https://github.com/DeTiveNC/detivenc.github.io"
     }
