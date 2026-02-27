@@ -233,18 +233,18 @@
   ],
   "projects": [
     {
-      "name": "SpringTemplateDockerized",
+      "name": "KtorTemplateDockerized",
       "isActive": true,
-      "description": "Template for a web service with Spring Boot, PostgreSQL, Docker and JWT",
+      "description": "Template for a web service with Ktor, PostgreSQL, Docker and JWT",
       "highlights": [
         "Kotlin",
-        "Spring Boot",
+        "Ktor",
         "Docker Compose",
         "PostgreSQL",
         "JWT"
       ],
-      "url": "https://github.com/DeTiveNC/SpringTemplateDockerized",
-      "github": "https://github.com/DeTiveNC/SpringTemplateDockerized"
+      "url": "https://github.com/DeTiveNC/KtorTemplateDockerized",
+      "github": "https://github.com/DeTiveNC/KtorTemplateDockerized"
     },
     {
       "name": "Toma6",
