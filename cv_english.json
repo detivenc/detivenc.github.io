@@ -5,7 +5,7 @@
     "image": "/me.webp",
     "email": "detivenc@proton.me",
     "url": "https://detivenc.github.io",
-    "summary": "Computer Engineering student at the University of Vigo. I enjoy backend development with technologies such as Java, Kotlin, Golang, and Elixir. I also have frontend experience with Astro and Vue.",
+    "summary": "Computer Engineering student at the University of Vigo. I enjoy backend development with technologies such as Java, Kotlin and Golang. I also have frontend experience with Astro and Svelte.",
     "location": {
       "address": "",
       "postalCode": "15011",
@@ -154,7 +154,7 @@
       "keywords": ["Web", "Frontend", "JavaScript Library", "UI"]
     },
     {
-      "name": "Vue",
+      "name": "Svelte",
       "level": "Principiante",
       "keywords": ["Web", "Frontend", "JavaScript Library", "UI"]
     },
@@ -192,11 +192,6 @@
       "name": "Golang",
       "level": "Intermedio",
       "keywords": ["Backend", "Concurrency", "Microservices", "APIs"]
-    },
-    {
-      "name": "Elixir",
-      "level": "Intermedio",
-      "keywords": ["Fault-tolerance", "Concurrency", "Webs", "APIs"]
     }
   ],
   "languages": [

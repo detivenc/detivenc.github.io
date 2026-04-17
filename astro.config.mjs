@@ -1,5 +1,5 @@
 // @ts-check
-import { languages, defaultLang } from "./src/i18n/utils";
+import { languages, defaultLang } from "@/i18n/utils.ts";
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
